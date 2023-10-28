@@ -1,14 +1,21 @@
 * {
     box-sizing: border-box;
+    width: 100%;
 } 
+
 body {
     display:flex;
     align-items: center;
     margin: auto;
 }
 
+#wrapper {
+    max-width: 1020px;
+    margin: 0 auto;
+}
 .container {
 	width: 100%;
+    height: 100%;
     padding-bottom: 20%;
     background-color: #D9D9D9;
 }
@@ -43,12 +50,40 @@ body {
 .food {
     display: grid;
     position: absolute;
-    background-color: #b8b8b8;
     height: 380px;
     width: 900px;
     top:60px;
     left: 320px;
 }
+/*별*/
+.star_rating {
+    width: 100%; 
+    box-sizing: border-box; 
+    display: inline-flex; 
+    margin-top: 10px;
+    margin-left: 30px;
+    float: left;
+    flex-direction: row; 
+    justify-content: flex-start;
+  }
+  .star_rating .star {
+    width: 15px; 
+    height: 15px; 
+    margin-right: 2px;
+    display: inline-block; 
+    background: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FE2bww%2FbtsviSSBz4Q%2F5UYnwSWgTlFt6CEFZ1L3Q0%2Fimg.png') no-repeat; 
+    background-size: 100%; 
+    box-sizing: border-box; 
+  }
+  .star_rating .star.on {
+    width: 15px; 
+    height: 15px;
+    margin-right: 2px;
+    display: inline-block; 
+    background: url('https://blog.kakaocdn.net/dn/b2d6gV/btsvbDoal87/XH5b17uLeEJcBP3RV3FyDk/img.png') no-repeat;
+    background-size: 100%; 
+    box-sizing: border-box; 
+  }
 
 .food1 {
     background-color: #818181;
@@ -60,6 +95,19 @@ body {
     background-color: white;
     width: 250px;
     height: 80px;
+    font-size: 12px;
+}
+
+.text {
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+.text2 {
+    margin-top: 6px;
+    margin-left: 30px;
+    font-size: 9px;
+    color: #818181;
 }
 
 .food2 {
@@ -77,6 +125,7 @@ body {
     height: 80px;
     left: 300px;
     top: 300px;
+    font-size: 12px;
 }
 .food3 {
     position: absolute;
@@ -93,14 +142,14 @@ body {
     height: 80px;
     left: 600px;
     top: 300px;
+    font-size: 12px;
 }
 /*메뉴별 인기 맛집*/
 .menu {
     position: absolute;
-    background-color: rgb(194, 172, 172);
-    top:530px;
+    top:600px;
     width: 100%;
-    height: 150%;
+    height: 100%;
 }
 
 .menutext {
@@ -109,13 +158,17 @@ body {
     margin-top: 5%;
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 50px;
 }
 .entire{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 1em;
+    margin-left: 20px;
+    margin-right: 20px;
+    
 }
-img { width: 100%; height: 100%; }
+img { width: 100%; height: 100%; height: 270px;}
 .entire div {
     position: relative;
 }
@@ -123,7 +176,7 @@ img { width: 100%; height: 100%; }
 .entire .korean, .chinese, .western, .japanese, .cafe, .bar {
     position: absolute;
     top: 0;
-    left: 30px;
+    left: 0px;
     height: 100%;
     width: 100%;
     background: rgba(73, 73, 73, 0.4);
@@ -150,7 +203,7 @@ img { width: 100%; height: 100%; }
 
          /* hide the title by default */
         opacity: 0;
-        transition: opacity 1s;
+        transition: opacity 0.5s;
     }
     
     .korean:hover, .chinese:hover, .western:hover ,.japanese:hover,.cafe:hover,.bar:hover{
@@ -162,17 +215,16 @@ img { width: 100%; height: 100%; }
 /*리뷰부분*/
 .review {
     position: absolute;
-    background-color: rgb(194, 194, 172);
-    top:1300px;
+    top:1320px;
     width: 100%;
-    height: 60%;
+    height: 70%;
 }
 
 .reviewtitle {
     text-align : center;
     font-size: 32px;
     font-weight: bold;
-    margin-top: 5%;
+    margin-top: 15%;
 }
 .reviewtext {
     text-align : center;
@@ -186,13 +238,21 @@ img { width: 100%; height: 100%; }
     margin-top: 50px;
     margin-left: 20px;
     text-align : center;
-    line-height : 220px;
+}
+
+.reviewlabel {
+    margin-top: 60px;
+}
+.reviewlabel1 {
+    margin-top: 30px;
+    font-size: 9px;
 }
 
 .review1 {
     width: 250px;
     height: 300px;
     background-color: #BCBCBC;
+    font-size: 14px;
 }
 
 .review2 {
