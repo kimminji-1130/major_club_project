@@ -1,10 +1,10 @@
 * {
     box-sizing: border-box;
     width: 100%;
-} 
+}
 
 body {
-    display:flex;
+    display: flex;
     align-items: center;
     margin: auto;
 }
@@ -13,30 +13,31 @@ body {
     max-width: 1020px;
     margin: 0 auto;
 }
+
 .container {
-	width: 100%;
+    width: 100%;
     height: 100%;
     padding-bottom: 20%;
     background-color: #D9D9D9;
 }
 
-.title{
+.title {
     font-size: 33px;
     margin-top: 15vh;
     margin-left: 50px;
     font-weight: bold;
-    
+
 }
 
-.content{
+.content {
     font-size: 12px;
     margin-left: 50px;
     padding-top: 10px;
     padding-bottom: 20px;
-    line-height: 2.5em; 
+    line-height: 2.5em;
 }
 
-.button{
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,52 +46,57 @@ body {
     width: 200px;
     height: 60px;
     margin-left: 50px;
-    
+
 }
+
 .food {
     display: grid;
     position: absolute;
     height: 380px;
     width: 900px;
-    top:60px;
+    top: 60px;
     left: 320px;
 }
+
 /*별*/
 .star_rating {
-    width: 100%; 
-    box-sizing: border-box; 
-    display: inline-flex; 
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
     margin-top: 10px;
     margin-left: 30px;
     float: left;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: flex-start;
-  }
-  .star_rating .star {
-    width: 15px; 
-    height: 15px; 
-    margin-right: 2px;
-    display: inline-block; 
-    background: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FE2bww%2FbtsviSSBz4Q%2F5UYnwSWgTlFt6CEFZ1L3Q0%2Fimg.png') no-repeat; 
-    background-size: 100%; 
-    box-sizing: border-box; 
-  }
-  .star_rating .star.on {
-    width: 15px; 
+}
+
+.star_rating .star {
+    width: 15px;
     height: 15px;
     margin-right: 2px;
-    display: inline-block; 
+    display: inline-block;
+    background: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FE2bww%2FbtsviSSBz4Q%2F5UYnwSWgTlFt6CEFZ1L3Q0%2Fimg.png') no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+}
+
+.star_rating .star.on {
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+    display: inline-block;
     background: url('https://blog.kakaocdn.net/dn/b2d6gV/btsvbDoal87/XH5b17uLeEJcBP3RV3FyDk/img.png') no-repeat;
-    background-size: 100%; 
-    box-sizing: border-box; 
-  }
+    background-size: 100%;
+    box-sizing: border-box;
+}
 
 .food1 {
     background-color: #818181;
     width: 250px;
-    height:300px;
-    
+    height: 300px;
+
 }
+
 .food1text {
     background-color: white;
     width: 250px;
@@ -114,10 +120,11 @@ body {
     position: absolute;
     background-color: #818181;
     width: 250px;
-    height:300px;
+    height: 300px;
     left: 300px;
-    
+
 }
+
 .food2text {
     position: absolute;
     background-color: white;
@@ -127,14 +134,16 @@ body {
     top: 300px;
     font-size: 12px;
 }
+
 .food3 {
     position: absolute;
     background-color: #818181;
     width: 250px;
-    height:300px;
+    height: 300px;
     left: 600px;
-    
+
 }
+
 .food3text {
     position: absolute;
     background-color: white;
@@ -144,10 +153,11 @@ body {
     top: 300px;
     font-size: 12px;
 }
+
 /*메뉴별 인기 맛집*/
 .menu {
     position: absolute;
-    top:600px;
+    top: 80vh;
     width: 100%;
     height: 100%;
 }
@@ -160,109 +170,136 @@ body {
     font-weight: bold;
     margin-bottom: 50px;
 }
-.entire{
+
+.entire {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 1em;
-    margin-left: 20px;
-    margin-right: 20px;
-    
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    grid-gap: 2em;
+    width: 90vw;
+    margin: auto;
+
 }
-img { width: 100%; height: 100%; height: 270px;}
+
+img {
+    width: 25vw;
+    height: 35vh;
+    object-fit: cover;
+}
+
 .entire div {
     position: relative;
 }
 
-.entire .korean, .chinese, .western, .japanese, .cafe, .bar {
+.entire .korean,
+.chinese,
+.western,
+.japanese,
+.cafe,
+.bar {
     position: absolute;
     top: 0;
     left: 0px;
-    height: 100%;
-    width: 100%;
+    height: 35vh;
+    width: 25vw;
     background: rgba(73, 73, 73, 0.4);
-    }
-    
-    .entire .korean, .chinese, .western, .japanese, .cafe, .bar{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: rgba(65, 65, 65, 0.4);
-        
-        /* typographic styles */
-        color: white;
-        font-size: 1.5em;
-        font-weight: bold;
-        text-decoration: none;
-        
-        /* position the text centrally*/
-        display: flex;
-        align-items: center;
-        justify-content: center;
+}
 
-         /* hide the title by default */
-        opacity: 0;
-        transition: opacity 0.5s;
-    }
-    
-    .korean:hover, .chinese:hover, .western:hover ,.japanese:hover,.cafe:hover,.bar:hover{
-        opacity: 1;
-    }
+.entire .korean,
+.chinese,
+.western,
+.japanese,
+.cafe,
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35vh;
+    width: 25vw;
 
-   
-    
+    /* typographic styles */
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+
+    /* position the text centrally*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* hide the title by default */
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.korean:hover,
+.chinese:hover,
+.western:hover,
+.japanese:hover,
+.cafe:hover,
+.bar:hover {
+    opacity: 1;
+}
+
+
+
 /*리뷰부분*/
 .review {
     position: absolute;
-    top:1320px;
-    width: 100%;
-    height: 70%;
+    top: 160vh;
+    width: 100vw;
+    height: 70vh;
 }
 
 .reviewtitle {
-    text-align : center;
+    text-align: center;
     font-size: 32px;
     font-weight: bold;
     margin-top: 15%;
 }
+
 .reviewtext {
-    text-align : center;
+    text-align: center;
     font-size: 14px;
     margin-top: 2%;
 }
+
 .review0 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 5px;
+    grid-column-gap: 30px;
     margin-top: 50px;
-    margin-left: 20px;
-    text-align : center;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    width: 100vw;
+    height: 80vh;
+    font-size: 1.5em;
 }
 
 .reviewlabel {
-    margin-top: 60px;
+    margin-top: 15vh;
 }
+
 .reviewlabel1 {
     margin-top: 30px;
-    font-size: 9px;
+    font-size: 0.8em;
 }
 
 .review1 {
-    width: 250px;
-    height: 300px;
-    background-color: #BCBCBC;
-    font-size: 14px;
+    background-color: #bcbcbc;
 }
 
-.review2 {
-    width: 250px;
-    height: 300px;
-    background-color: #BCBCBC;
+.fa-solid {
+    margin-top: 10vh;
+}
+.user {
+    margin-top: 2vh;
+    font-size: 1.2rem;
 }
 
-.review3 {
-    width: 250px;
-    height: 300px;
-    background-color: #BCBCBC;
+.footer {
+    position: absolute;
+    top: 290vh;
+    height: 20vh;
 }
