@@ -42,16 +42,16 @@
     color: var(--black);
     font: 1rem/1.3 sans-serif;
   }
-  
+  /*좌우로 2rem만큼 거리줌*/
   .gallery {
     padding: 0 2rem;
   }
-  
+  /*전체크기 지정*/
   .container {
     max-width: 1030px;
     margin: 0 auto;
   }
-  
+  /*사라지는 것*/
   .d-none {
     display: none;
   }
@@ -59,7 +59,29 @@
   
   /* TOOLBAR
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .view-options{
+    display:flex;
+    align-items: center;
+  }
+  .view-options li:not(:last-child){
+    margin-right: 1.2rem;
+  }
+
+  .view-options button {
+    padding: 2px;
+    border: 3px solid transparent;
+  }
+
+  .view-options {
+    border-color: var(--darkgreen);
+  }
   /* IMAGE LIST
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   
@@ -74,3 +96,8 @@
   
   /* MQ
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  @media screen and (max-width:900px){
+    .toolbar input[type="range"]{
+        display: none;
+    }
+  }
