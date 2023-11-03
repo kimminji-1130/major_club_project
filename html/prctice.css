@@ -59,15 +59,80 @@ body {
     display: none;
 }
 
-/*firstboard부분 지정*/
-.firstboard {
+/*firstboard부분 지정
+ -------------------------------------------------- */
+ .firstboard {
+    justify-content: space-between;
+     align-items: center;
+     max-width: 1030px;
+     margin: 0 auto;
+ }
+ .first {
     display: flex;
-    background-color: #D9D9D9;
-    width: 100%;
-    display: flex;
-    align-items: center;
+     align-items: center;
+    padding: 3rem;
+    background-color: #232966;
+}
+.title {
+    color: white;
+    font-size: 3rem;
+    padding: 2px;
+    white-space: nowrap;
+    margin-right: 30px;
+    margin-bottom: 10rem;
+}
+.picture {
+    max-width: 25rem;
 }
 
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 2rem; /* 화면이 좁을 때 더 작은 글꼴 크기로 조정 */
+        margin-right: 2rem; /* 더 작은 마진으로 조정 */
+        margin-bottom: 5rem; /* 더 작은 마진으로 조정 */
+    }
+
+    .picture {
+        max-width: 17rem; /* 화면이 좁을 때 이미지 크기 확대 */
+    }
+}
+
+/* KIND
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .menu {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+    
+  }
+  .backgroundcolor {
+    background: linear-gradient(#232966 ,white);
+  }
+.popular {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.menu .popular p:first-child {
+    color: #555555;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+.menu .popular p:last-child {
+    color: black;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+/* checkbox
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.choice {
+    display: flex;
+    margin: 5rem 2rem 3rem 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1rem;
+}
 
 /* TOOLBAR
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
