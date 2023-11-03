@@ -2,152 +2,208 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Filterable Thumbnail Layout</title>
-  <link rel="stylesheet" href="./prctice.css">
+    <meta charset="UTF-8">
+    <title>Filterable Thumbnail Layout</title>
+    <link rel="stylesheet" href="./prctice.css">
 
 </head>
 
 <body>
+    <section class="firstboard">
+        <div class="firstcontainer">
+            <div class="title">이달의 BEST 4 맛집<br>TOP '멘야이로'</div>
+            <img src="../img/일식/멘야이로.png" class="picture" />
 
-  <section class="gallery">
-    <div class="container">
-      <div class="toolbar">
-        <div class="search-wrapper">
-          <input type="search" placeholder="Search for photos">
-          <div class="counter">
-            Total photos: <span>12</span></div>
+            <li class="list">
+                <img src="../img/한식/떡볶이포차.png" class="first" />
+                <img src="../img/중식/스마일마라탕.png" class="second" />
+                <img src="../img/양식/피오르달리조.png" class="third" />
+            </li>
+            <div class="listTitle">
+                <div class="firsttitle">솔뫼 분식<div class="firsttitle1">떡볶이 포차</div>
+                </div>
+                <div class="secondtitle">솔뫼 중식<div class="firsttitle1">스마일마라탕</div>
+                </div>
+                <div class="thirdtitle">솔뫼 양식<div class="firsttitle1">피오르달리조</div>
+                </div>
+            </div>
+
+            <div class="choice">
+                <hr class="line" style="border: solid 2px; width: 100vw; height: 1px;">
+                <div class="h">
+                    <input type='checkbox' name='category' value='sol' onclick='checkOnlyOne(this)' /> 솔뫼
+                    <br />
+                    <input type='checkbox' name='category' value='non' onclick='checkOnlyOne(this)' /> 논골
+                    <br />
+                    <input type='checkbox' name='category' value='han' onclick='checkOnlyOne(this)' /> 한식
+                    <input type='checkbox' name='category' value='jun' onclick='checkOnlyOne(this)' /> 중식
+                    <br />
+                    <input type='checkbox' name='category' value='yan' onclick='checkOnlyOne(this)' /> 양식
+                    <br />
+                    <input type='checkbox' name='category' value='ill' onclick='checkOnlyOne(this)' /> 일식
+                    <input type='checkbox' name='category' value='caf' onclick='checkOnlyOne(this)' /> 카페
+                    <br />
+                    <input type='checkbox' name='category' value='yah' onclick='checkOnlyOne(this)' /> 야식
+                    <br />
+                </div>
+            </div>
+
+            <li class="menu">
+                <img src="../img/한식/떡볶이포차.png" class="menu1" />
+                <img src="../img/한식/굽용이.png" class="menu2" />
+                <img src="../img/술집/122번지.png" class="menu3" />
+                <img src="../img/카페/달콤한정류장.png" class="menu4" />
+                <img src="../img/술집/내고향막창.png" class="menu5" />
+                <img src="../img/양식/피오르달리조.png" class="menu6" />
+            </li>
         </div>
-        <ul class="view-options">
-          <li class="zoom">
-            <input type="range" min="180" max="380" value="280">
-          </li>
-          <li class="show-grid active">
-            <button>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/grid-view.svg" alt="grid view">
-            </button>
-          </li>
-          <li class="show-list">
-            <button>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/list-view.svg" alt="list view">
-            </button>
-          </li>
-        </ul>
-      </div>
-      <ol class="image-list grid-view">
-        <li>
-          <figure>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature1.jpg" alt="">
-            <figcaption>
-              <p>green leafed trees</p>
-              <p>Photo by <a href="https://unsplash.com/@redcharlie" target="_blank">redcharlie</a></p>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature2.jpg" alt="">
-            <figcaption>
-              <p>landscape photography of brown mountain</p>
-              <p>Photo by <a href="https://unsplash.com/@wilstewart3" target="_blank">Wil Stewart</a></p>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature3.jpg" alt="">
-            <figcaption>
-              <p>blue starry night</p>
-              <p>Photo by <a href="https://unsplash.com/@ignitedit" target="_blank">Mark Basarab</a></p>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature4.jpg" alt="">
-            <figcaption>
-              <p>aerial island and beaches</p>
-              <p>Photo by <a href="https://unsplash.com/@phiestyphung" target="_blank">Amanda Phung</a></p>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature5.jpg" alt="">
-            <figcaption>
-              <p>forest pathway</p>
-              <p>Photo by <a href="https://unsplash.com/@elke_karin" target="_blank">Elke Karin Lugert</a></p>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature6.jpg" alt="">
-            <figcaption>
-              <p>photo of two black, white, and orange koi fish</p>
-              <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature7.jpg" alt="">
-            <figcaption>
-              <p>landscape photo of brown mountain</p>
-              <p>Photo by <a href="https://unsplash.com/@darrylbrian" target="_blank">Darryl Brian</a></p>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature8.jpg" alt="">
-            <figcaption>
-              <p>moon illustration</p>
-              <p>Photo by <a href="https://unsplash.com/@metatzon297" target="_blank">Shin Roran</a></p>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature9.jpg" alt="">
-            <figcaption>
-              <p>bird's eye view of body of water</p>
-              <p>Photo by <a href="https://unsplash.com/@timmossholder" target="_blank">Tim Mossholder</a></p>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature10.jpg" alt="">
-            <figcaption>
-              <p>high-angle photography of rural area</p>
-              <p>Photo by <a href="https://unsplash.com/@stlobe" target="_blank">Steven Wong</a></p>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature11.jpg" alt="">
-            <figcaption>
-              <p>silhoutte of mountains during sunset</p>
-              <p>Photo by <a href="https://unsplash.com/@von_co" target="_blank">Ivana Cajina</a></p>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature12.jpg" alt="">
-            <figcaption>
-              <p>bird's-eye view of mountain rang</p>
-              <p>Photo by <a href="https://unsplash.com/@leni_eleni" target="_blank">Elena Prokofyeva</a></p>
-            </figcaption>
-          </figure>
-        </li>
-      </ol>
-    </div>
-  </section>
-  <!-- partial -->
-  <script src="main.js"></script>
+    </section>
+
+
+    <section class="gallery">
+        <div class="container">
+            <div class="toolbar">
+                <div class="search-wrapper">
+                    <input type="search" placeholder="Search for photos">
+                    <div class="counter">
+                        Total photos: <span>71</span></div>
+                </div>
+                <ul class="view-options">
+                    <li class="zoom">
+                        <input type="range" min="180" max="380" value="280">
+                    </li>
+                    <li class="show-grid active">
+                        <button>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/grid-view.svg"
+                                alt="grid view">
+                        </button>
+                    </li>
+                    <li class="show-list">
+                        <button>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/list-view.svg"
+                                alt="list view">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <ol class="image-list grid-view">
+                <li>
+                    <figure>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature1.jpg" alt="">
+                        <figcaption>
+                            <p>green leafed trees</p>
+                            <p>Photo by <a href="https://unsplash.com/@redcharlie" target="_blank">redcharlie</a></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature2.jpg" alt="">
+                        <figcaption>
+                            <p>landscape photography of brown mountain</p>
+                            <p>Photo by <a href="https://unsplash.com/@wilstewart3" target="_blank">Wil Stewart</a></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature3.jpg" alt="">
+                        <figcaption>
+                            <p>blue starry night</p>
+                            <p>Photo by <a href="https://unsplash.com/@ignitedit" target="_blank">Mark Basarab</a></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature4.jpg" alt="">
+                        <figcaption>
+                            <p>aerial island and beaches</p>
+                            <p>Photo by <a href="https://unsplash.com/@phiestyphung" target="_blank">Amanda Phung</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature5.jpg" alt="">
+                        <figcaption>
+                            <p>forest pathway</p>
+                            <p>Photo by <a href="https://unsplash.com/@elke_karin" target="_blank">Elke Karin Lugert</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature6.jpg" alt="">
+                        <figcaption>
+                            <p>photo of two black, white, and orange koi fish</p>
+                            <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature7.jpg" alt="">
+                        <figcaption>
+                            <p>landscape photo of brown mountain</p>
+                            <p>Photo by <a href="https://unsplash.com/@darrylbrian" target="_blank">Darryl Brian</a></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature8.jpg" alt="">
+                        <figcaption>
+                            <p>moon illustration</p>
+                            <p>Photo by <a href="https://unsplash.com/@metatzon297" target="_blank">Shin Roran</a></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature9.jpg" alt="">
+                        <figcaption>
+                            <p>bird's eye view of body of water</p>
+                            <p>Photo by <a href="https://unsplash.com/@timmossholder" target="_blank">Tim Mossholder</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature10.jpg" alt="">
+                        <figcaption>
+                            <p>high-angle photography of rural area</p>
+                            <p>Photo by <a href="https://unsplash.com/@stlobe" target="_blank">Steven Wong</a></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature11.jpg" alt="">
+                        <figcaption>
+                            <p>silhoutte of mountains during sunset</p>
+                            <p>Photo by <a href="https://unsplash.com/@von_co" target="_blank">Ivana Cajina</a></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature12.jpg" alt="">
+                        <figcaption>
+                            <p>bird's-eye view of mountain rang</p>
+                            <p>Photo by <a href="https://unsplash.com/@leni_eleni" target="_blank">Elena Prokofyeva</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <!-- partial -->
+    <script src="../js/practice.js"></script>
 </body>
 
 </html>
