@@ -6,7 +6,7 @@
 body {
     display: flex;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
 #wrapper {
@@ -22,19 +22,19 @@ body {
 }
 
 .title {
-    font-size: 33px;
+    font-size: 3rem;
     margin-top: 15vh;
-    margin-left: 50px;
+    margin-left: 2vw;
     font-weight: bold;
 
 }
 
 .content {
-    font-size: 12px;
+    font-size: 1em;
     margin-left: 50px;
     padding-top: 10px;
     padding-bottom: 20px;
-    line-height: 2.5em;
+    line-height: 2em;
 }
 
 .button {
@@ -52,10 +52,11 @@ body {
 .food {
     display: grid;
     position: absolute;
-    height: 380px;
-    width: 900px;
+    height: 73vh;
+    width: 70vw;
     top: 60px;
-    left: 320px;
+    left: 25vw;
+    background-color: aqua;
 }
 
 /*별*/
@@ -160,6 +161,7 @@ body {
     top: 80vh;
     width: 100%;
     height: 100%;
+    margin: 0 auto;
 }
 
 .menutext {
@@ -261,11 +263,12 @@ img {
 .reviewtext {
     text-align: center;
     font-size: 14px;
-    margin-top: 2%;
+    margin-top: 1vh;
 }
 
 .review0 {
     display: grid;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
     margin-top: 50px;

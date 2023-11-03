@@ -2,9 +2,10 @@
 $servername = "localhost";
 $username = "root";
 $password = "031130";
+$dbname = "board";
 
 //$conn=new mysqli($servername, $username, $password);
-$conn=mysqli_connect($servername, $username, $password);
+$conn=mysqli_connect($servername, $username, $password, $dbname);
 //$conn = new PDO("mysql:host=$servername", $username, $password);
 
 if(!$conn) {
