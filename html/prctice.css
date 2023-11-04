@@ -25,7 +25,9 @@ button {
 img {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 322px;
+    width: 100%;
+    object-fit: cover;
 }
 
 ol,
@@ -71,7 +73,7 @@ body {
     display: flex;
      align-items: center;
     padding: 3rem;
-    background-color: #232966;
+    background-color: #D9D9D9;
 }
 .title {
     color: white;
@@ -106,7 +108,7 @@ body {
     
   }
   .backgroundcolor {
-    background: linear-gradient(#232966 ,white);
+    background: linear-gradient(#D9D9D9 ,white);
   }
 .popular {
     display: grid;
@@ -168,20 +170,27 @@ body {
 }
 
 .image-list li {
-    background: var(--lightbrown);
     color: var(--darkblack);
 }
 
+.image-list li p{
+    margin-left: 0.5rem;
+}
+
 .image-list li p:first-child {
-    color: #ccc;
+    margin-top: 1rem;
+    color: #959595;
     font-size: 1rem;
 }
 
 .image-list li p:last-child {
     margin-top: 0.5rem;
+    
     color: #000000;
     font-size: 1rem;
 }
+
+
 
 /* GRID VIEW
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -195,15 +204,26 @@ body {
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .list-view li+li {
     margin-top: 1.5rem;
+    
 }
 
 .list-view figure {
     display: grid;
-    grid-gap: 1.5rem;
-    grid-template-columns: 150px 1fr;
+    grid-gap: 2rem;
+    grid-template-columns: 330px 1fr;
     align-items: center;
+    background-color: #D9D9D9;
 }
 
+.list-view img {
+    width: 100%;
+} 
+
+.image-list li p:nth-child(2) {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 /* MQ
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width:900px) {

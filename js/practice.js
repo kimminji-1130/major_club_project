@@ -39,11 +39,11 @@ rangeInput.addEventListener('input', function () {
 
 //검색키워드로 필터적용
 
-const captions = document.querySelectorAll('.image-list figcaption p:first-child');
+const captions1 = document.querySelectorAll('.image-list figcaption p:nth-child(2)');
 const myArray = [];
 let counter = 1;
 
-for(const caption of captions){
+for(const caption of captions1){
     myArray.push({
         id:counter++,
         text:caption.textContent
@@ -75,3 +75,4 @@ function keyupHandler(){
     photosCounter.textContent = filterArray.length;
 }
 
+//checkbox 필터 적용
