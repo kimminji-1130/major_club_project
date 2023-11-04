@@ -39,11 +39,11 @@ rangeInput.addEventListener('input', function () {
 
 //검색키워드로 필터적용
 
-const captions1 = document.querySelectorAll('.image-list figcaption p:nth-child(2)');
+const captions = document.querySelectorAll('.image-list figcaption p:nth-child(2)');
 const myArray = [];
 let counter = 1;
 
-for(const caption of captions1){
+for(const caption of captions){
     myArray.push({
         id:counter++,
         text:caption.textContent
@@ -75,4 +75,16 @@ function keyupHandler(){
     photosCounter.textContent = filterArray.length;
 }
 
-//checkbox 필터 적용
+//체크박스 하나만선택
+
+function checkOnlyOne(element) {
+
+    const checkboxes
+        = document.getElementsByName("category");
+
+    checkboxes.forEach((cb) => {
+        cb.checked = false;
+    })
+
+    element.checked = true;
+}
