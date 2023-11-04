@@ -75,5 +75,3 @@ function keyupHandler(){
     photosCounter.textContent = filterArray.length;
 }
 
-
-//목록리스트

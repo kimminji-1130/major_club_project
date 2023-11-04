@@ -1,4 +1,5 @@
-const data = [
+import restaurantData from './db.js';
+const restaurantData = [
     {
       kind: '솔뫼 양식',
       name: '피오르달리조',
@@ -567,14 +568,27 @@ const data = [
     }
 ];
 
-const jsonData = data.map((item, index) => ({
-    idx: index + 1,
-    kind: item.kind,
-    name: item.name,
-    number: item.number,
-    time: item.time,
-    address: item.address,
-    review: item.review,
-  }));
-  
-  console.log(JSON.stringify(jsonData, null, 2));
+function addRestaurantItemsToPage() {
+    const imageList = document.querySelector(".image-list.grid-view");
+
+    restaurantData.forEach(restaurant => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `
+            <figure>
+                <img src="${restaurant.image}" alt="">
+                <figcaption>
+                    <p>${restaurant.category}</p>
+                    <p>${restaurant.name}</p>
+                    <p>${restaurant.phone}</p>
+                    <p>${restaurant.hours}</p>
+                </figcaption>
+            </figure>
+        `;
+        imageList.appendChild(listItem);
+    });
+}
+
+// 페이지 로드 시 데이터 추가 함수 호출
+addRestaurantItemsToPage();
+// 이 데이터를 외부에서 사용할 수 있도록 export
+export default restaurantData;
