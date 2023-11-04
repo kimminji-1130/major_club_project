@@ -11,7 +11,3 @@ function checkOnlyOne(element) {
 
     element.checked = true;
 }
-
-
-
-
