@@ -63,18 +63,20 @@ body {
 
 /*firstboard부분 지정
  -------------------------------------------------- */
- .firstboard {
+.firstboard {
     justify-content: space-between;
-     align-items: center;
-     max-width: 1030px;
-     margin: 0 auto;
- }
- .first {
+    align-items: center;
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.first {
     display: flex;
-     align-items: center;
+    align-items: center;
     padding: 3rem;
     background-color: #D9D9D9;
 }
+
 .title {
     color: white;
     font-size: 3rem;
@@ -83,33 +85,38 @@ body {
     margin-right: 30px;
     margin-bottom: 10rem;
 }
+
 .picture {
     max-width: 25rem;
 }
 
 @media screen and (max-width: 768px) {
     .title {
-        font-size: 2rem; /* 화면이 좁을 때 더 작은 글꼴 크기로 조정 */
-        margin-right: 2rem; /* 더 작은 마진으로 조정 */
-        margin-bottom: 5rem; /* 더 작은 마진으로 조정 */
+        font-size: 2rem;
+        /* 화면이 좁을 때 더 작은 글꼴 크기로 조정 */
+        margin-right: 2rem;
+        /* 더 작은 마진으로 조정 */
+        margin-bottom: 5rem;
+        /* 더 작은 마진으로 조정 */
     }
 
     .picture {
-        max-width: 17rem; /* 화면이 좁을 때 이미지 크기 확대 */
+        max-width: 17rem;
+        /* 화면이 좁을 때 이미지 크기 확대 */
     }
 }
 
 /* KIND
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .menu {
+.menu {
     margin-left: 2rem;
     margin-right: 2rem;
-    
-    
-  }
-  .backgroundcolor {
-    background: linear-gradient(#D9D9D9 ,white);
-  }
+}
+
+.backgroundcolor {
+    background: linear-gradient(#D9D9D9, white);
+}
+
 .popular {
     display: grid;
     grid-gap: 2rem;
@@ -121,11 +128,13 @@ body {
     font-size: 1rem;
     margin-top: 15px;
 }
+
 .menu .popular p:last-child {
     color: black;
     font-size: 1rem;
     margin-top: 5px;
 }
+
 /* checkbox
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .choice {
@@ -173,7 +182,7 @@ body {
     color: var(--darkblack);
 }
 
-.image-list li p{
+.image-list li p {
     margin-left: 0.5rem;
 }
 
@@ -185,7 +194,7 @@ body {
 
 .image-list li p:last-child {
     margin-top: 0.5rem;
-    
+
     color: #000000;
     font-size: 1rem;
 }
@@ -204,7 +213,7 @@ body {
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .list-view li+li {
     margin-top: 1.5rem;
-    
+
 }
 
 .list-view figure {
@@ -217,13 +226,14 @@ body {
 
 .list-view img {
     width: 100%;
-} 
+}
 
 .image-list li p:nth-child(2) {
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 /* MQ
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width:900px) {

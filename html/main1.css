@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    outline: none;
+    border: none;
+    max-width: 1030px;
+    
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    margin: 0 0;
+    color: var(--black);
+    font: 1rem;
+    font-family: 'SUITE-Regular';
+}
+
+/*------첫번째 파트부분------*/
+.container {
+    background-color: #d9d9d9;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 3rem;
+
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    white-space: nowrap;/*줄바꿈 되지 않게 하는 코드*/
+}
+
+.content {
+    font-size: 1.2rem;
+    line-height: 2.1;
+    margin-top: 1rem;
+    white-space: nowrap;
+}
+
+.button {
+    display: flex;
+    margin: 0 0;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 230px;
+    min-height: 70px;
+    margin-top: 2rem;
+}
+
+.ads-img {
+    display: flex;
+}
+.food1 {
+    max-width: 30rem;
+}
+.food1text {
+    display: flex;
+    background-color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    
+}
+
+.food1text p:first-child {
+    color: #000000;
+}
+.food1text p:last-child {
+    color:#7B7B7B;
+    font-size: 0.8rem;
+}
+
+.menu {
+
+}
+
+.menutext {
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0 0 3rem;
+    justify-content: center;
+}
