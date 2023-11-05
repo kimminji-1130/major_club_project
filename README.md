@@ -1,4 +1,5 @@
 # major_club_project
+https://web-major-club-project-gj8u2llolanjds.sel5.cloudtype.app/
 ## 1. 프로젝트 Description
 ✔ 프로젝트명
 ✔ 어떤 프로젝트인지 소개
